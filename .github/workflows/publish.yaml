@@ -17,4 +17,4 @@ jobs:
           java-version: 23
       - run: echo "TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
       - run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-      - run: ./gradlew publish --no-daemon
+      - run: chmod u+x gradlew && ./gradlew publish --no-daemon
