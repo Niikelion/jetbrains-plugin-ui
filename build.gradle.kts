@@ -33,7 +33,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Niikelion/jetbrain-plugin-ui")
+            url = uri("https://maven.pkg.github.com/Niikelion/jetbrains-plugin-ui")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
