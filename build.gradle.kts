@@ -1,7 +1,6 @@
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "2.2.0"
-    id("org.jetbrains.intellij.platform") version "2.10.5"
     id("maven-publish")
 }
 
@@ -10,17 +9,9 @@ version = "0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
-
-    intellijPlatform {
-        defaultRepositories()
-    }
 }
 
 dependencies {
-    intellijPlatform {
-        intellijIdeaUltimate("2025.3")
-    }
-
     testImplementation(kotlin("test"))
 }
 
